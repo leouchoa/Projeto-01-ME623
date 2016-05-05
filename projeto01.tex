@@ -1,0 +1,57 @@
+\documentclass[10pt]{article}
+\usepackage{geometry}
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\title{Delineamento e Pesquisa de Protótipos de Helicóptero de Papel
+                  Relatório Parcial}
+\author{Leonardo Uchoa, Lara Acrani e Hugo Calegari.}
+
+\date{ }
+\maketitle
+
+\cleardoublepage
+
+\tableofcontents
+
+\section{Introdução}
+
+Uma brincadeira muito famosa que geralmente faz parte da infância de muitas crianças é criar/dobrar um modelo com a aerodinâmica de um avião, utilizando papel (geralmente folha de caderno), e arremessar-lo em um direção "qualquer".
+
+Uma outra brincadeira, não tão famosa -mas igualmente divertida e interessante-, é , após construir um helicótero com papel e caneta,  soltá-lo e observar sua queda .Entretanto, na época em que a brincadeira é feita -infância-, geralmente não é mostrado a importância -via técnicas didáticas- noções de medição. Logo, a maneira abtualmente utilizada para comprovar qual era o melhor modelo era : cada criança construia o seu próprio brinquedo e o soltava de uma altura relativamente alta, cronometrando o tempo de queda .
+
+Esta pesquisa  irá estudar a segunda brincadeira citada de uma maneira técnica e controlada, de forma que os efeitos e as interações entre os fatores/configurações (como tamanho da hélice, tipo de papel e vários outros) sejam realçados, nos guiando para o modelo que garanta o maior tempo de voo possível.
+
+\section{Objetivo}
+O objetivo deste projeto é, ao utilizar a técnica de Delineamento de Experimentos, estudar como as diversas especificações, que definem um helicóptero de papel, interagem entre sí e consequentemente encontrar a configuração  ótima de tempo de voo, ou seja, achar combinação entre fatores que forneça o maior tempo de voo possível dadas as especificações.
+
+\section{Metodologia}
+
+
+A metodologia que será empregada neste estudo será a de Delineamento de Experimentos.  O motivo desta escolha é justificado pela interação entre simplicidade da aplicação e sua habilidade de gerar  resultados contundentes e objetivos. Não obstante, os efeitos/tratamentos/fatores a serem estudados aqui serão
+
+\begin{enumerate}
+\item Formato da asa
+\item  Comprimento da asa
+\item Largura da asa
+\item Material da asa
+\item Peso do helicóptero
+\item Rotação (ao iniciar o processo de queda livre) em direção fixa.
+\item peso do eixo
+\item enrijecimento da asa
+\end{enumerate}
+
+Outras características, como ângulo da asa, formato do eixo e comprimento do eixo serão mantido fixos para este experimento.
+
+O local de teste será o segundo piso do Instituto de Matemática, Estatistica e Computação Científica, IMECC, pois é um lugar fechado, o que é favorável ao experimento, já que ameniza o efeito ventania e outros possíveis efeitos ruído. Adicionalmente, a maneira como o objeto será solto irá variar, uma vez que o efeito do fator rotação será avaliado e ordem de com que testaremos os efeitos será aleatória.
+
+Partindo para a metodologia estatística, a estratégia chave utilizada para guiar este experimento será o delineamento fatorial $$\phi^k$$ onde $\phi$ é o número de níveis e k ,a quantidade de fatores. Entretanto, para podermos utilizar está técnica e consequentemente termos um resultado passível de conclusões, devemos supor algumas hipóteses e uma equação que relacione os efeitos com a média, que é um parâmetro muito importante em análise estatística. A equação será $$y_{ijk}= \mu + \tau_i + \beta_j + {\epsilon_i}_j,$$  onde  $\epsilon$ segue uma distribuição normal com média 0 e variância $\sigma$, $\mu$ é um valor comum a todos os os efeitos, $\tau_i$ é um efeito
+
+Ao empregar este método ao modelo com dois níveis e sete fatores, temos um total de $2^{7}$ possíveis combinações de fatores.
+
+
+\section{Bibliografia}
+
+
+\end{document}
