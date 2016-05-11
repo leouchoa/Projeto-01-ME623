@@ -2,6 +2,8 @@
 \usepackage{geometry}
 \usepackage{amsmath, amssymb, amsfonts, amsthm}
 \usepackage[utf8]{inputenc}
+\usepackage[hidelinks, bookmarks]{hyperref}
+
 
 \begin{document}
 \title{Delineamento e Pesquisa de Protótipos de Helicóptero de Papel
@@ -17,7 +19,7 @@
 
 \section{Introdução}
 
-Uma brincadeira muito famosa que geralmente faz parte da infância de muitas crianças é criar/dobrar um modelo com a aerodinâmica de um avião, utilizando papel (geralmente folha de caderno), e arremessar-lo em um direção "qualquer".
+Uma brincadeira muito famosa que geralmente faz parte infância de muitas crianças é criar/dobrar um modelo com a aerodinâmica de um avião, utilizando papel (geralmente  folha de caderno), e arremessar-lo em um direção "qualquer".
 
 Uma outra brincadeira, não tão famosa -mas igualmente divertida e interessante-, é , após construir um helicótero com papel e caneta,  soltá-lo e observar sua queda .Entretanto, na época em que a brincadeira é feita -infância-, geralmente não é mostrado a importância -via técnicas didáticas- noções de medição. Logo, a maneira abtualmente utilizada para comprovar qual era o melhor modelo era : cada criança construia o seu próprio brinquedo e o soltava de uma altura relativamente alta, cronometrando o tempo de queda .
 
@@ -37,21 +39,20 @@ A metodologia que será empregada neste estudo será a de Delineamento de Experi
 \item Largura da asa
 \item Material da asa
 \item Peso do helicóptero
-\item Rotação (ao iniciar o processo de queda livre) em direção fixa.
 \item peso do eixo
-\item enrijecimento da asa
 \end{enumerate}
 
 Outras características, como ângulo da asa, formato do eixo e comprimento do eixo serão mantido fixos para este experimento.
 
 O local de teste será o segundo piso do Instituto de Matemática, Estatistica e Computação Científica, IMECC, pois é um lugar fechado, o que é favorável ao experimento, já que ameniza o efeito ventania e outros possíveis efeitos ruído. Adicionalmente, a maneira como o objeto será solto irá variar, uma vez que o efeito do fator rotação será avaliado e ordem de com que testaremos os efeitos será aleatória.
 
-Partindo para a metodologia estatística, a estratégia chave utilizada para guiar este experimento será o delineamento fatorial $$\phi^k$$ onde $\phi$ é o número de níveis e k ,a quantidade de fatores. Entretanto, para podermos utilizar está técnica e consequentemente termos um resultado passível de conclusões, devemos supor algumas hipóteses e uma equação que relacione os efeitos com a média, que é um parâmetro muito importante em análise estatística. A equação será $$y_{ijk}= \mu + \tau_i + \beta_j + {\epsilon_i}_j,$$  onde  $\epsilon$ segue uma distribuição normal com média 0 e variância $\sigma$, $\mu$ é um valor comum a todos os os efeitos, $\tau_i$ é um efeito
+Partindo para a metodologia estatística, a estratégia chave utilizada para guiar este experimento será o delineamento fatorial $$\phi^k$$ onde $\phi$ é o número de níveis e k ,a quantidade de fatores. Entretanto, para podermos utilizar está técnica e consequentemente termos um resultado passível de conclusões, devemos supor algumas hipóteses e uma equação que relacione os efeitos com a média, que é um parâmetro muito importante em análise estatística. A equação será $$y_{ijk}= \mu + \tau_i + \beta_j + {\epsilon_i}_j,$$  onde  $\epsilon$ segue uma distribuição normal com média 0 e variância $\sigma$, $\mu$ é um valor comum a todos os os efeitos, $\tau_i$ é um efeito comum a cada a fator e $\beta_j$ um efeito relativo a cada .
 
-Ao empregar este método ao modelo com dois níveis e sete fatores, temos um total de $2^{7}$ possíveis combinações de fatores.
+Ao empregar este método ao modelo com dois níveis e seis fatores, temos um total de $2^{6}$ possíveis combinações de fatores.
 
 
 \section{Bibliografia}
 
+[1]. Montgomery, D. C. Design and Analysis of Experiments
 
 \end{document}

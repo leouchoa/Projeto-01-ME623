@@ -1,0 +1,143 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Singapore}
+
+
+%\title{Apresentação  ME}
+%\subtitle{Delineamento e Otimização de Helicópteros de Papel }
+%\author{Leonardo Uchoa, Hugo Calegari, Lara Acrani}
+%\institute{Universidade Estadual de Campinas}
+%\date{ }
+
+%\titlegraphic{\includegraphics[scale=0.2]{logo_unicamp}}
+
+\begin{document}
+
+\begin{frame}[plain]
+    \title{Apresentação ME623}
+    \subtitle{Delineamento e Otimização de Helicópteros de Papel}
+    \institute{Universidade Estadual de Campinas}
+    \date{ }
+    \maketitle
+    \small
+    \begin{tabular}[t]{@{}l@{\hspace{3pt}}p{.32\textwidth}@{}}
+        Autores: & Leonardo Uchoa \\
+        &  Hugo Calegari \\
+        &  Lara Acrani
+    \end{tabular}%
+
+    \begin{figure}
+        \includegraphics[scale=0.2]{logo_unicamp}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Sumário}
+        \tableofcontents
+\end{frame}
+
+\section{Introdução}
+    \begin{frame}
+        \frametitle{Introdução}
+        Pesquisa sobre redução de tempo de vôo para helicópteros feitos com papel no intuito de, futuramente, ter um modelo base relevante -ou seja, utilizando princípios bem fundamentados de sólida estrutura matemática- para replicação em massa.
+    \end{frame}
+
+\section{Objetivo}
+    \begin{frame}
+        \frametitle{Objetivo}
+        O objetivo desta pesquisa é encontrar as especificações ótimas de maneira que, dentro um padrão, façam com que um Helicóptero de Papel, com tais configurações, tenha o maior tempo de vôo possível em relação as demais características.
+    \end{frame}
+
+\section{Metodologia}
+    \begin{frame}
+        \frametitle{Metodologia}
+
+        \begin{itemize}
+            \item As técnicas empregadas aqui seguem a metodologia estatística de Delineamento de Experimentos. Tal escolha é motivada pela sua capacidade de direcionar/apontar quais são os níves ótimos para cada combinação de fatores, o que utilizado como "guia exploratório" desta pesquisa.
+
+            \item Para cada um dos seis fatores, serão considerados dois níveis, o que configura um experimento fatorial com um total de $2^6$ possíveis combinações.
+
+        \end{itemize}
+    \end{frame}
+
+    \subsection{Fatores}
+        \begin{frame}
+            \frametitle{Metodologia}
+                \framesubtitle{Fatores}
+                    Os fatores a serem analisados serão :
+
+                        \begin{enumerate}
+                            \item Formato da asa
+                            \item Comprimento da asa
+                            \item Largura da asa
+                            \item Material da asa
+                            \item Peso do helicóptero
+                            \item peso do eixo
+                        \end{enumerate}
+
+        \end{frame}
+
+    \subsection{Níveis}
+            \begin{frame}
+                \framesubtitle{Níveis}
+                    \frametitle{Metodologia}
+
+                        Já os níveis, respectivos aos fatores, serão
+                            \begin{itemize}
+                                \item
+                                \item
+                                \item
+                                \item
+                                \item
+                                \item
+                            \end{itemize}
+        \end{frame}
+
+    \subsection{Hipóteses}
+         \begin{frame}
+            \frametitle{Metodologia}
+               \framesubtitle{Hipóteses}
+                  A hipótese aqui assumida seguirá a equação
+                     \begin{equation}
+                        y_{ij}= \mu + \tau_i + \beta_j + {\epsilon_i}_j
+                        \label{eq:equacao definidora}
+                     \end{equation}
+                  de forma que \large{$\epsilon$} segue uma distribuição normal com média 0 e variância $\sigma$, $\mu$ é um valor comum a todos os os efeitos, $\tau_i$ é um efeito comum a entre fatores e $\beta_j$ um efeito relativo entre níveis.
+         \end{frame}
+
+      \begin{frame}
+         \frametitle{Metodologia}
+            \framesubtitle{Hipóteses}
+               \begin{itemize}
+                  \item Para tal equação teremos, como proposto, um total de $\phi^k$ combinações entre características e tratamentos, onde $\phi$ é o número de níveis e k, a quantidade de fatores. Neste experimento, $k$ e $\phi$ assumem, respectivamente os valores 2 e 6.
+
+                  \item Quanto à aleatorização, a ordem com que os helicóteros serão soltos será completamente aleatória, com o intuito de reduzir efeitos como, por exemplo, treinamento/condicionamento do operador que irá soltar o helicóptero.
+
+               \end{itemize}
+      \end{frame}
+
+      \begin{frame}
+         \frametitle{Metodologia}
+            \framesubtitle{Hipóteses}
+               \begin{itemize}
+                  \item A maneira para determinar a ordem de descida dos protótipos será realizando uma permutação randômica de todos os $2^6$ protótipos no software $R$.
+
+                  \item Também ocorrerá aleatorização entre os operadores que iram soltar o helicóptero para, novamente, tentar amenizar o efeito de condicionamento do operador. Já a escolha se dará ao utilizarmos um simulador de distribuição multinomial com três eventos equiprováveis, ou seja, 1/3 de probabilidade para cada operador.
+               \end{itemize}
+      \end{frame}
+
+\section{Modelos}
+    \begin{frame}
+        \frametitle{Metodologia}
+            \framesubtitle{Modelos}
+        \begin{figure}
+            %\label{fig:modelo tipo 1}
+            %\includegraphics[scale=escala]{prototipo_aqui}
+            %\caption{Modelo tipo I}
+        \end{figure}
+    \end{frame}
+
+
+
+
+\end{document}
