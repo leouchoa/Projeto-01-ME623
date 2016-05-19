@@ -2,7 +2,8 @@
 \beamer@sectionintoc {1}{Introdu\IeC {\c c}\IeC {\~a}o}{3}{0}{1}
 \beamer@sectionintoc {2}{Objetivo}{4}{0}{2}
 \beamer@sectionintoc {3}{Metodologia}{5}{0}{3}
-\beamer@subsectionintoc {3}{1}{Fatores}{6}{0}{3}
-\beamer@subsectionintoc {3}{2}{N\IeC {\'\i }veis}{7}{0}{3}
-\beamer@subsectionintoc {3}{3}{Hip\IeC {\'o}teses}{8}{0}{3}
-\beamer@sectionintoc {4}{Modelos}{11}{0}{4}
+\beamer@subsectionintoc {3}{1}{T\IeC {\'e}cnica Estat\IeC {\'\i }stica Empregada}{5}{0}{3}
+\beamer@subsectionintoc {3}{2}{Fatores}{6}{0}{3}
+\beamer@subsectionintoc {3}{3}{N\IeC {\'\i }veis}{7}{0}{3}
+\beamer@sectionintoc {4}{Modelos}{10}{0}{4}
+\beamer@sectionintoc {5}{Resultados e Conclus\IeC {\~o}es}{12}{0}{5}

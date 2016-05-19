@@ -2,7 +2,6 @@
 \usepackage[utf8]{inputenc}
 \usetheme{Singapore}
 
-
 %\title{Apresentação  ME}
 %\subtitle{Delineamento e Otimização de Helicópteros de Papel }
 %\author{Leonardo Uchoa, Hugo Calegari, Lara Acrani}
@@ -49,16 +48,17 @@
     \end{frame}
 
 \section{Metodologia}
-    \begin{frame}
-        \frametitle{Metodologia}
+   \subsection{Técnica Estatística Empregada}
+      \begin{frame}
+           \frametitle{Metodologia}
+               \framesubtitle{Técnica Estatística Empregada}
+                 \begin{itemize}
+                     \item As técnicas empregadas aqui seguem a metodologia estatística de Delineamento de Experimentos. Tal escolha é motivada pela sua capacidade de direcionar/apontar quais são os níves ótimos ao analisar cada combinação de fatores, o que é utilizado como "guia exploratório" desta pesquisa.
 
-        \begin{itemize}
-            \item As técnicas empregadas aqui seguem a metodologia estatística de Delineamento de Experimentos. Tal escolha é motivada pela sua capacidade de direcionar/apontar quais são os níves ótimos para cada combinação de fatores, o que é utilizado como "guia exploratório" desta pesquisa.
+                     \item Em especial, o projeto será desenhado segundo um experimento fatorial, que nos permite avaliar cada possível combinação de fatores e seus respectivos níveis e extrair a melhor combinação entre fatores e níveis de todos os ensaios realizados.
 
-            \item Para cada um dos seis fatores, serão considerados dois níveis, o que configura um experimento fatorial com um total de $2^6$ possíveis combinações.
-
-        \end{itemize}
-    \end{frame}
+                 \end{itemize}
+      \end{frame}
 
     \subsection{Fatores}
         \begin{frame}
@@ -77,7 +77,7 @@
 
         \end{frame}
 
-    \subsection{Níveis}
+   \subsection{Níveis}
             \begin{frame}
                 \framesubtitle{Níveis}
                     \frametitle{Metodologia}
@@ -91,40 +91,28 @@
                                 \item Clips tipo I e Clips tipo II;
                                 \item 1 centímetro e 2 centímetros.
                             \end{itemize}
-        \end{frame}
+            \end{frame}
 
-    \subsection{Hipóteses}
-         \begin{frame}
-            \frametitle{Metodologia}
-               \framesubtitle{Hipóteses}
-                  A hipótese aqui assumida seguirá a equação
-                     \begin{equation}
-                        y_{ij}= \mu + \tau_i + \beta_j + {\epsilon_i}_j
-                        \label{eq:equacao definidora}
-                     \end{equation}
-                  de forma que \large{$\epsilon_{ij}$} segue uma distribuição normal com média 0 e variância $\sigma$, $\mu$ é um valor comum a todos os os efeitos, $\tau_i$ é um efeito comum entre fatores e $\beta_j$, um efeito relativo entre níveis.
-         \end{frame}
+            \begin{frame}
+                  \frametitle{Metodologia}
+                     \framesubtitle{Experimento Fatorial e Aleatorização}
+                        \begin{itemize}
+                           \item Para tais níveis de fatores teremos, como proposto, um total de $\phi^k$ combinações entre características e tratamentos, onde $\phi$ é o número de níveis e k, a quantidade de fatores. Neste experimento, $k$ e $\phi$ assumem, respectivamente os valores 6 e 2.
 
-      \begin{frame}
-         \frametitle{Metodologia}
-            \framesubtitle{Hipóteses}
-               \begin{itemize}
-                  \item Para tal equação teremos, como proposto, um total de $\phi^k$ combinações entre características e tratamentos, onde $\phi$ é o número de níveis e k, a quantidade de fatores. Neste experimento, $k$ e $\phi$ assumem, respectivamente os valores 6 e 2.
+                           \item Quanto à aleatorização, a ordem com que os helicóteros serão soltos será completamente aleatória, com o intuito de reduzir efeitos como, por exemplo, treinamento/condicionamento do operador que irá soltar o helicóptero.
 
-                  \item Quanto à aleatorização, a ordem com que os helicóteros serão soltos será completamente aleatória, com o intuito de reduzir efeitos como, por exemplo, treinamento/condicionamento do operador que irá soltar o helicóptero.
+                        \end{itemize}
+            \end{frame}
 
-               \end{itemize}
-      \end{frame}
+            \begin{frame}
+               \frametitle{Metodologia}
+                  \framesubtitle{Aleatorização}
+                     \begin{itemize}
+                        \item A maneira para determinar a ordem de descida dos protótipos será realizando uma permutação randômica de todos os $2^6$ protótipos no software $R$.
 
-      \begin{frame}
-         \frametitle{Metodologia}
-            \framesubtitle{Hipóteses}
-               \begin{itemize}
-                  \item A maneira para determinar a ordem de descida dos protótipos será realizando uma permutação randômica de todos os $2^6$ protótipos no software $R$.
-
-                  \item Também ocorrerá aleatorização entre os operadores que irão soltar o helicóptero para, novamente, tentar amenizar o efeito de condicionamento do operador. Já a escolha se dará ao utilizarmos um simulador de distribuição multinomial com três eventos equiprováveis, ou seja, 1/3 de probabilidade para cada operador.
-               \end{itemize}
-      \end{frame}
+                        \item Também ocorrerá aleatorização entre os operadores que irão soltar o helicóptero para, novamente, tentar amenizar o efeito de condicionamento do operador. Já esta escolha se dará ao utilizarmos um simulador de distribuição binomial, com 0.5 de probabilidade para cada operador.
+                     \end{itemize}
+            \end{frame}
 
 \section{Modelos}
     \begin{frame}
@@ -145,19 +133,30 @@
             \caption{Modelo tipo II}
         \end{figure}
     \end{frame}
-    \begin{frame}
-        \frametitle{Metodologia}
-            \framesubtitle{Modelos}
-        \begin{figure}
+    %\begin{frame}
+        %\frametitle{Metodologia}
+            %\framesubtitle{Modelos}
+        %\begin{figure}
             %\label{fig:modelo tipo 3}
             %\includegraphics[scale=0.1]{foto03}
             %\caption{Modelo tipo III}
-        \end{figure}
-    \end{frame}
+        %\end{figure}
+    %\end{frame}
+
+    \section{Resultados e Conclusões}
+       \begin{frame}
+         \frametitle{Resultados}
+            Os resultados obtidos para cada ensaio, suas médias e variâncias e conclusão estão resumidos no arquivo .xsls que será aberto a seguir.
+       \end{frame}
+
+%\section{Conclusões}
+%   \begin{frame}
+%      \frametitle{Conclusões}
 
 
 
 
+%   \end{frame}
 
 
 \end{document}
